@@ -1,0 +1,262 @@
+/* Reset basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/* Primary Navigation */
+.nav-container {
+    display: flex;            /* Abilita Flexbox */
+    justify-content: space-between; /* Spazio tra il logo e i link */
+    align-items: center;      /* Allinea verticalmente gli elementi */
+    padding: 32px 32px;
+    max-height: 80px;
+    background: #1f1f1f;
+}
+
+
+
+.logo {
+    width: 8%;
+    margin-left: 20px;
+  
+}
+
+/* Primary nav */
+.primary-nav {
+    display: flex;           /* Abilita Flexbox per i link */
+    margin-right: 20px;     /* Spazio a destra della nav */
+}
+
+.primary-nav li {
+    margin-left: 30px;      /* Spazio tra i link */
+}
+
+
+.primary-nav a {
+    color: lightblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+.primary-nav a:hover {
+    color: lightgreen;
+}
+
+/* Main Content */
+.content {
+    display: inline-block;
+    width: 100%;
+    height: calc(150vh - 150px);
+    /* Altezza totale della pagina, meno la barra di navigazione e il footer */
+
+
+}
+
+/* Main box (70% width) */
+.main-content {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0px;
+    
+}
+
+#h2title {
+    font-size: 24px;
+    color: black;
+
+
+}
+
+.article-picture {
+    float: right;
+}
+
+.article-picture2 {
+    float: left;
+}
+
+
+.article-picture3 {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 2px solid black; 
+
+}
+
+/* Float left for the first image */
+#left-image {
+    float: left;
+    width: 30%; 
+    margin-right: 10px; 
+}
+
+/* Float right for the second image */
+#right-image {
+    float: right;
+    width: 30%; 
+    margin-left: 10px;
+    margin-bottom: 20px; 
+}
+
+#text-clear{
+    /* Clear the floated images so the text appears below */
+    clear: both;
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    border: solid 1px red;
+    padding: 16px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+   
+   
+}
+
+
+.image {
+    margin: 50px;
+    border: solid 3px #333;
+    max-width: 400px;
+    height: 280px;
+}
+
+.text1 {
+    /* clear: right; */
+    margin: 16px;
+    border: solid 1px red;
+    padding: 16px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+
+
+.container1{
+   text-align: center;
+   margin-top: 50px;
+   
+}
+
+.question {
+    font-size: 60px;
+    
+   
+}
+
+
+#text {
+    color: #040404;
+    font-size: 18px;
+    margin-top: 20px;
+    
+
+}
+
+
+
+#h2title {
+
+    margin-bottom: 15px;
+    font-size: 30px;
+
+}
+
+.aftertitle {
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+.first {
+    margin-bottom: 16px;
+
+}
+
+.second {
+    margin-bottom: 16px;
+
+}
+
+.third {
+    margin-bottom: 8px;
+
+}
+
+.last {
+    margin-bottom: 24px;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+}
+
+.footer-nav {
+    list-style: none;
+    justify-content: center;
+}
+
+.footer-nav li {
+    margin: 0 10px;
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    color: lightgreen;
+}
+
+/* Footer separator line */
+footer hr {
+    border: 1px solid gray;
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* Footer text */
+footer p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Bottone "Back to Top" */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: green;
+}
+
+.back-to-top:active {
+    background-color: blue;
+}
