@@ -270,36 +270,38 @@ footer {
     display: flex;
     width: 100%;
     height: 100vh;
+    padding: 20px;
 }
 
 /* Left Flex Container (20%) */
 .left-flex-container-custom {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: ;
+    justify-content: flex-start;
     width: 20%;
-    background-color: white;
-    gap: 0px;
+    background-color: rgb(255, 255, 255);
+    gap: 5px;
+    align-items: center;
 }
 
 /* Left Flex Items */
 .left-flex-item {
-    background-color: #f8f8f8;
+    background-color: rgb(5, 255, 5);
     padding: 20px;
-   ;
     width: 80%;
     text-align: center;
     border: 2px solid #333;
+    margin-top: 10px;
+    
+    
 }
-
 /* Right Flex Container (80%) */
 .right-flex-container-custom {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 80%;
-    background-color:  rgb(199, 26, 26);
+    background-color: white;
     padding: 10px;
     align-items: center;
     gap: 15px;
@@ -307,13 +309,46 @@ footer {
 
 /* Right Flex Items */
 .right-flex-item {
-    background-color: #FFB6C1;
+    background-color: #f80328;
     padding: 20px;
     margin: 10px;
-    width: 22%; /* Adjust width for layout */
+    width: 22%; /* Mantiene la stessa larghezza per il layout */
     text-align: center;
     border: 2px solid #333;
-    height: 30%;
+    height: auto; /* Rimuovo l'altezza fissa per evitare problemi di overflow */
+}
+
+/* Styling per le immagini all'interno dei box */
+.right-flex-item img {
+    width: 100%; /* L'immagine occuperà tutto lo spazio del box */
+    height: auto; /* Mantiene il rapporto di aspetto dell'immagine */
+    object-fit: cover; /* Si adatta al box senza distorcersi */
+    max-height: 250px; /* Imposta un'altezza massima per prevenire immagini troppo grandi */
+    min-height: 200px;
+    border: 1px solid #ddd; /* Facoltativo, per aggiungere un bordo sottile all'immagine */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra per un effetto visivo più gradevole */
+}
+
+
+
+.right-flex-item button {
+    background-color: #fb0909; /* Colore di sfondo del bottone */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuovi il bordo predefinito */
+    padding: 5px 10px; /* Spaziatura interna del bottone */
+    font-size: 16px; /* Dimensione del testo */
+    cursor: pointer; /* Mostra la mano quando si passa sopra */
+    border-radius: 5px; /* Arrotonda gli angoli del bottone */
+    transition: background-color 0.3s ease; /* Aggiunge una transizione morbida per il cambio di colore */
+    max-height: 250px; /* Imposta un'altezza massima per prevenire immagini troppo grandi */
+    min-height: 200px;
+
+}
+
+.right-flex-item button:hover {
+    background-color: #61f803; /* Colore di sfondo quando si passa sopra con il mouse */
+   
+    
    
 
 }
