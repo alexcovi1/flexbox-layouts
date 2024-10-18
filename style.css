@@ -261,3 +261,55 @@ footer {
 .back-to-top:active {
     background-color: blue;
 }
+
+
+/*  NEW    */
+
+/* Main Flex Container */
+.main-flex-container-custom {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Left Flex Container (20%) */
+.left-flex-container-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    background-color: white;
+}
+
+/* Left Flex Items */
+.left-flex-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    text-align: center;
+    border: 2px solid #333;
+}
+
+/* Right Flex Container (80%) */
+.right-flex-container-custom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color:  white;
+    padding: 10px;
+}
+
+/* Right Flex Items */
+.right-flex-item {
+    background-color: #FFB6C1;
+    padding: 20px;
+    margin: 10px;
+    width: 22%; /* Adjust width for layout */
+    text-align: center;
+    border: 2px solid #333;
+    height: 30%;
+
+}
