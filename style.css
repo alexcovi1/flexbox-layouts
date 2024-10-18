@@ -16,6 +16,7 @@
     padding: 32px 32px;
     max-height: 80px;
     background: #1f1f1f;
+    margin: 20px;
 }
 
 
@@ -203,20 +204,21 @@ footer {
     background-color: black;
     color: white;
     padding: 20px;
-    height: 150px;
+    height: 100px;
+    margin: 20px;
 }
 
 /* Navigazione del footer */
 .footer-nav {
     display: flex;               /* Abilita Flexbox per la nav */
+    gap: 30px;
     list-style: none;
     justify-content: center;     /* Allinea i link al centro */
-    margin: 10px 0;             /* Margine sopra e sotto */
+    font-size: 20px;
+    margin-top: 30px;
 }
 
-.footer-nav li {
-    margin: 0 10px;             /* Spazio tra i link */
-}
+
 
 .footer-nav a {
     color: lightblue;
@@ -227,18 +229,6 @@ footer {
     color: lightgreen;
 }
 
-/* Separator line nel footer */
-footer hr {
-    border: 1px solid gray;
-    width: 100%;
-    margin: 10px auto;
-}
-
-/* Testo del footer */
-footer p {
-    font-size: 12px;
-    margin-top: 10px;
-}
 
 /* Bottone "Back to Top" */
 .back-to-top {
