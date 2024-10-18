@@ -23,7 +23,7 @@
 
 .logo {
     width: 8%;
-    margin-left: 20px;
+    
   
 }
 
@@ -84,27 +84,19 @@
 }
 
 
+/* Container for images and text */
 .article-picture3 {
-    width: 80%; 
-    margin: 0 auto; 
-    padding: 20px;
-    border: 2px solid black; 
-
+    display: flex;
+    justify-content: space-between; /* Posiziona le immagini ai lati opposti */
+    align-items: flex-start; /* Allinea in alto */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Permette di andare a capo se necessario */
 }
 
-/* Float left for the first image */
-#left-image {
-    float: left;
-    width: 30%; 
-    margin-right: 10px; 
-}
-
-/* Float right for the second image */
-#right-image {
-    float: right;
-    width: 30%; 
-    margin-left: 10px;
-    margin-bottom: 20px; 
+#left-image, #right-image {
+    width: 48%; /* Entrambe le immagini occupano circa la metà dello spazio */
+    max-width: 400px;
+    margin: 40px;
 }
 
 #text-clear{
@@ -118,6 +110,21 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
    
+   
+}
+
+#text-clear1{
+    /* Clear the floated images so the text appears below */
+    clear: both;
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    border: solid 1px red;
+    padding: 16px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+        flex-basis: 100%; /* Occupare tutta la larghezza */
+        padding-top: 20px;
    
 }
 
@@ -216,6 +223,7 @@ footer {
     justify-content: center;     /* Allinea i link al centro */
     font-size: 20px;
     margin-top: 30px;
+    flex: 1 1 25px;
 }
 
 
