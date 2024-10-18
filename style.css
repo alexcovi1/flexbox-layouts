@@ -96,7 +96,7 @@
 #left-image, #right-image {
     width: 48%; /* Entrambe le immagini occupano circa la metà dello spazio */
     max-width: 400px;
-    margin: 40px;
+    margin: 30px;
 }
 
 #text-clear{
@@ -118,7 +118,7 @@
     clear: both;
     padding: 30px;
     text-align: center;
-    margin: 10px;
+    margin: 30px;
     border: solid 1px red;
     padding: 16px 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
