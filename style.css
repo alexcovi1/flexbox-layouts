@@ -197,22 +197,25 @@
 
 /* Footer */
 footer {
+    display: flex;                /* Abilita Flexbox */
+    flex-direction: column;      /* Disporre gli elementi in colonna */
+    align-items: center;         /* Allinea gli elementi al centro */
     background-color: black;
     color: white;
     padding: 20px;
-    text-align: center;
     height: 150px;
 }
 
+/* Navigazione del footer */
 .footer-nav {
+    display: flex;               /* Abilita Flexbox per la nav */
     list-style: none;
-    justify-content: center;
+    justify-content: center;     /* Allinea i link al centro */
+    margin: 10px 0;             /* Margine sopra e sotto */
 }
 
 .footer-nav li {
-    margin: 0 10px;
-    display: inline;
-    margin-right: 20px;
+    margin: 0 10px;             /* Spazio tra i link */
 }
 
 .footer-nav a {
@@ -224,14 +227,14 @@ footer {
     color: lightgreen;
 }
 
-/* Footer separator line */
+/* Separator line nel footer */
 footer hr {
     border: 1px solid gray;
     width: 100%;
     margin: 10px auto;
 }
 
-/* Footer text */
+/* Testo del footer */
 footer p {
     font-size: 12px;
     margin-top: 10px;
